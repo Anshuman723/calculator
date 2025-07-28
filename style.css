@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  
+  #theme-toggle, #sound-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  /* Default (Dark Mode) */
+  body.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .calculator {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 25px;
+    width: 330px;
+    margin: 100px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  #display {
+    width: 95%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    text-align: right;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 22px;
+    border: none;
+    border-radius: 16px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+  }
+  
+  .clear {
+    color: #ff4c4c;
+  }
+  
+  .operator {
+    color: #00e676;
+    font-weight: bold;
+  }
+  
+  .equals {
+    background-color: #00c853;
+    color: rgb(109, 16, 16);
+    font-weight: bold;
+  }
+  
+  .equals:hover {
+    background-color: #00e676;
+  }
+  
+  .doubleZero, .back {
+    color: #00e5ff;
+  }
+  
+  /* Light Mode Overrides */
+  body.light {
+    background-color: #f0f0f0;
+    color: black;
+  }
+  
+  body.light .calculator {
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  body.light #display {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  
+  body.light button {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  body.light button:hover {
+    background-color: #d3d3d3;
+  }
+  
+  body.light .clear {
+    color: #d50000;
+  }
+  
+  body.light .operator {
+    color: #00c853;
+  }
+  
+  body.light .doubleZero, body.light .back {
+    color: #0091ea;
+  }
+  
+  body.light .equals {
+    background-color: #00c853;
+    color: white;
+  }
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  button:focus {
+    outline: 2px solid #00c853; /* or any light color */
+    outline-offset: 2px;
+  }
+  
